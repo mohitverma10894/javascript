@@ -1,0 +1,45 @@
+<script>
+		function editvalidateForm() {
+
+			var email = document.forms["userEditForm"]["email"];
+			if (email.value == "") {
+				alert("Please enter a valid e-mail address.");
+				email.focus();
+				document.getElementById("email");
+
+				return false;
+			}
+
+			if (email.value.indexOf("@", 0) < 0) {
+				alert("Please enter a valid e-mail address.");
+				email.focus();
+				document.getElementById("email");
+				return false;
+			}
+
+			if (email.value.indexOf(".", 0) < 0) {
+				alert("Please enter a valid e-mail address.");
+				email.focus();
+				document.getElementById("email");
+				return false;
+			}
+
+			var empt = document.forms["userEditForm"]["username"].value;
+			if (empt == "") {
+				alert("Please enter a valid Username");
+				return false;
+			}
+
+			var mobile = document.forms["userEditForm"]["mobile"].value;
+			if (mobile == "") {
+				alert("Enter Your Mobile No.");
+				return false;
+			}
+			if (mobile.length != 10) {
+				alert("Mobile number must be 10 Character.");
+				return false;
+			}
+
+		}
+	</script>
+
