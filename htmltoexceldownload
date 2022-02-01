@@ -58,5 +58,6 @@ function saveAsExcel(id, fileName)
 			a.download = ''+fileName;
 //triggering the function
 			a.click();
-			document.getElementById("example1").style.border = "none"; 
+			document.getElementById("example1").style.border = "none";
+			
 }
