@@ -61,3 +61,6 @@ function saveAsExcel(id, fileName)
 			document.getElementById("example1").style.border = "none";
 			
 }
+
+
+<button type="button" class="btn btn-primary" onclick="saveAsExcel('divId')">Download in Excel Format</button>
